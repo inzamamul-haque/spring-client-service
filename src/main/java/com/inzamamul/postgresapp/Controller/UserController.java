@@ -8,8 +8,10 @@ import lombok.AllArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Bean;
+import org.springframework.http.HttpMethod;
 import org.springframework.web.bind.annotation.*;
-
+import org.springframework.web.client.RestTemplate;
 
 
 @CrossOrigin("*")
@@ -31,9 +33,9 @@ public class UserController {
         return userService.create(dto);
     }
 
-    @GetMapping(value = "/getName")
+    @GetMapping(value = "/getValue")
     public String getName() {
-        return "Hello Rifat";
+        return "This is MicroService 1";
     }
     @GetMapping("/getUserName")
     public String getUserName()

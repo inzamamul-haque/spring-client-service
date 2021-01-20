@@ -1,4 +1,4 @@
-package com.inzamamul.postgresapp.Configuration;
+/*package com.inzamamul.postgresapp.Configuration;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
@@ -11,4 +11,4 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         http.authorizeRequests().antMatchers("user").permitAll();
         http.csrf().disable();
     }
-}
+}*/
