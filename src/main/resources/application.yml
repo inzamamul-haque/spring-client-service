@@ -7,5 +7,22 @@ spring:
     user:
       name: admin
       password: admin
+  boot:
+    admin:
+      client:
+        url: http://localhost:8080
+
+    logging:
+      file:
+        path: "E:\\Projects\\postgres-app"
+
+    management:
+      endpoints:
+        web:
+          exposure:
+            include: '*'
+      endpoint:
+        health:
+          show-details: always
 
 
